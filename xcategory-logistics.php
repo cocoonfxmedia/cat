@@ -1,7 +1,7 @@
 
  <?php
 /*
-Template Name: category
+Template Name: category logistics
 */
 ?>
 
