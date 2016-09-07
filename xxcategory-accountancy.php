@@ -1,7 +1,7 @@
 
  <?php
 /*
-Template Name: category case studies
+Template Name: category accountacny
 */
 ?>
 
