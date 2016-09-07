@@ -119,7 +119,7 @@ if( !empty($image) ): ?>
 
 
 	</div>
-</div><!--CLOSEROW-->
+</div><!--CLOSEROW GIT-->
 
 
 
