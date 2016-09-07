@@ -181,7 +181,6 @@ add_filter( 'wpcf7_support_html5_fallback', '__return_true' );
 
 function jb_breadcrumbs(){
     global $post,$wp_query;
-
     if(is_page() ) {
          $post = $wp_query->get_queried_object();
     $front_page_id = get_option( 'page_on_front' );
