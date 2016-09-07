@@ -1,0 +1,58 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1347\cocoasubrtf570
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fnil\fcharset0 HelveticaNeue;}
+{\colortbl;\red255\green255\blue255;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww29860\viewh13880\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+
+\f0\fs24 \cf0 Change Log:\
+\
+\
+// functions.php\
+// this reduces the length of the post except lines 292\
+\
+function my_excerpt_length($length) \{\
+return 30;\
+\}\
+\
+// this add the click to read more plus title with you own customer link.  lines 295\
+\
+add_filter('excerpt_length', 'my_excerpt_length');\
+function new_excerpt_more( $more ) \{\
+	return '<p class="read-more"><a  href="'. get_permalink( get_the_ID() ) . '">[Read More..]</a></p>';\
+\}add_filter( 'excerpt_more', 'new_excerpt_more' );\
+\
+\
+\
+// Lines 233 onwards - this adds the featured thumbbnail to the blogs previous and next page\
+\
+\pard\pardeftab720\sl320
+
+\f1 \cf0 \expnd0\expndtw0\kerning0
+$previous = ( is_attachment() ) ? get_post( get_post()->post_parent ) : get_adjacent_post( false, '', true );\
+$next \'a0 \'a0 = get_adjacent_post( false, '', false );\
+$css \'a0 \'a0 \'a0= '';\
+\
+if ( is_attachment() && 'attachment' == $previous->post_type ) \{\
+return;\
+\}\
+\
+if ( $previous && \'a0has_post_thumbnail( $previous->ID ) ) \{\
+$prevthumb = wp_get_attachment_image_src( get_post_thumbnail_id( $previous->ID ), 'post-thumbnail' );\
+$css .= '\
+.post-navigation .nav-previous \{ background-image: url(' . esc_url( $prevthumb[0] ) . '); \}\
+.post-navigation .nav-previous .post-title, .post-navigation .nav-previous a:hover .post-title, .post-navigation .nav-previous .meta-nav \{ color: #fff; \}\
+.post-navigation .nav-previous a:before \{ background-color: rgba(0, 0, 0, 0.4); \}\
+';\
+\}\
+\
+if ( $next && has_post_thumbnail( $next->ID ) ) \{\
+$nextthumb = wp_get_attachment_image_src( get_post_thumbnail_id( $next->ID ), 'post-thumbnail' );\
+$css .= '\
+.post-navigation .nav-next \{ background-image: url(' . esc_url( $nextthumb[0] ) . '); \}\
+.post-navigation .nav-next .post-title, .post-navigation .nav-next a:hover .post-title, .post-navigation .nav-next .meta-nav \{ color: #fff; \}\
+.post-navigation .nav-next a:before \{ background-color: rgba(0, 0, 0, 0.4); \}\
+';\
+\}\
+\
+wp_add_inline_style( 'twentyfifteen-style', $css );\
+}
