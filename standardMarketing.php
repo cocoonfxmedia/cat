@@ -47,15 +47,16 @@ Template Name: Standard Marketing
 
 
 
-<div class="row">
+<div class="row marketingBar">
 
 	<div class="small-12 medium-4 large-3 columns">                     
-			Related Articles:	
-                        <?php $my_query = new WP_Query('category_name=marketing');?>
+			<div class="relHead">Related Articles:</div>	
+			<ul class="relArt">
+                        <?php $my_query = new WP_Query('category_name=marketing&posts_per_page=4');?>
 <?PHP while ($my_query->have_posts()) : $my_query->the_post();?>
 <li><a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_post_thumbnail();?><?php the_title(); ?></a></li>
 <?php endwhile; wp_reset_postdata(); ?>
-
+			</ul>
                         
 	</div>
 
@@ -85,9 +86,14 @@ Template Name: Standard Marketing
 	</div>
 
 	<div class="small-12 medium-12 large-3 columns">                     
-			Resources:
-
-                        
+			<div class="relHead">Case Studies:</div>	
+			<ul class="relArt">
+                       <?php $args = array('tag_id' => '39','posts_per_page' => 4); $my_query = new WP_Query( $args );?>
+<?PHP while ($my_query->have_posts()) : $my_query->the_post();?>
+<li><a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a></li>
+<?php endwhile; wp_reset_postdata(); ?>
+			</ul>
+               
 	</div>
 </div>
 

@@ -62,24 +62,22 @@ if( !empty($image) ): ?>
 
 <div class="row">
 
-	<div class="small-12 medium-4 large-3 columns">                     
-			Links:			
+	<div class="small-12 medium-4 large-2 columns">                     
+			
                         
 	</div>
 
-	<div class="small-12 medium-8 large-6 columns">                     
+	<div class="small-12 medium-8 large-8 large-push-2 columns">                     
 			<div class="pageContent designONE">
 
 				<?php the_content(); ?>
 			</div>                        
 	</div>
 
-	<div class="small-12 medium-12 large-3 columns">                     
-			Services:
-
-
+	<div class="small-12 medium-12 large-2 columns">                     
                         
 	</div>
+
 </div>
 
 

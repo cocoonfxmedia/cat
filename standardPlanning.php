@@ -48,7 +48,7 @@ Template Name: Standard Planning
 
 	<div class="small-12 medium-4 large-3 columns">                     
 			Related Articles:
-                        <?php $my_query = new WP_Query('category_name=planning');?>
+                        <?php $my_query = new WP_Query('category_name=planning&posts_per_page=4');?>
 <?PHP while ($my_query->have_posts()) : $my_query->the_post();?>
 <li><a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_post_thumbnail();?><?php the_title(); ?></a></li>
 
@@ -67,23 +67,29 @@ Template Name: Standard Planning
            
             <div class="callAction">   
                   <?php if (is_page('why-do-i-need-a-website')) { ?>
-              <a class="callNextPage" href="<?php echo esc_url( home_url( '/' ) );?>/planning-a-website/design-brief/">Next Step: Design Brief</a>
+              <a class="callNextPage" href="<?php echo esc_url( home_url( '/' ) );?>planning-a-website/design-brief/">Next Step: Design Brief</a>
              <?php } ?>
      <?php if (is_page('design-brief')) { ?>
-              <a class="callNextPage" href="<?php echo esc_url( home_url( '/' ) );?>/planning-a-website/initial-consulation/">Next Step: Initial Consulation</a>
+              <a class="callNextPage" href="<?php echo esc_url( home_url( '/' ) );?>planning-a-website/initial-consulation/">Next Step: Initial Consulation</a>
              <?php } ?>
                  <?php if (is_page('initial-consulation')) { ?>
-              <a class="callNextPage" href="<?php echo esc_url( home_url( '/' ) );?>/planning-a-website/website-specification/">Next Step: Website Specification</a>
+              <a class="callNextPage" href="<?php echo esc_url( home_url( '/' ) );?>planning-a-website/website-specification/">Next Step: Website Specification</a>
              <?php } ?>
                     <?php if (is_page('website-specification')) { ?>
-              <a class="callNextPage" href="<?php echo esc_url( home_url( '/' ) );?>/website-design/">Next Step: Designing your Website</a>
+              <a class="callNextPage" href="<?php echo esc_url( home_url( '/' ) );?>website-design/">Next Step: Designing your Website</a>
              <?php } ?>
                  </div>
               
 	</div>
 
 	<div class="small-12 medium-12 large-3 columns">                     
-			Resources:
+			<div class="relHead">Case Studies:</div>	
+			<ul class="relArt">
+                       <?php $args = array('tag_id' => '42','posts_per_page' => 4); $my_query = new WP_Query( $args );?>
+<?PHP while ($my_query->have_posts()) : $my_query->the_post();?>
+<li><a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a></li>
+<?php endwhile; wp_reset_postdata(); ?>
+			</ul>
 
 
                         

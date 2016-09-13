@@ -63,7 +63,7 @@
 </div>	
 
 				<div class="logo">
-     			<a href="<?php echo esc_url( home_url( '/' ) );?>"><img src="<?php echo esc_url( home_url( '/' ) );?>wp-content/uploads/logo.jpg"/></a>
+     			<a href="<?php echo esc_url( home_url( '/' ) );?>"><img src="<?php echo esc_url( home_url( '/' ) );?>wp-content/uploads/cfxLogo.svg"/></a>
      			
 
 </div>

@@ -137,10 +137,10 @@ h6 {
 header {
 	min-height: 105px;
     width: 100%;
-    background-color: #fff;
+    background-color: #171717;
     position: fixed;
     z-index: 10;
-    border-bottom: 1px solid #eaeaea;
+    border-bottom: 1px solid #000;
 }
 #colourBar {
     width: 100%;
@@ -232,7 +232,7 @@ strong {
 
 .logo {
 	margin: 20px 10px 10px 20px;
-	width: 250px;
+	width: 300px;
 	float: left;
 }
 .number {
@@ -240,6 +240,7 @@ strong {
     width: 50%;
     margin: 0 auto;
     margin-top: 24px;
+    color: #fff;
 }
 .telephoneQ {
     font-weight: 600;
@@ -630,26 +631,28 @@ img.caseImage {
     background-size: cover;
 }
 .introWrapper {
-    background-image: url("http://www.cocoonfx.co.uk/catepillar/wp-content/uploads/cathedral.jpg");
+    //background-image: url("http://www.cocoonfx.co.uk/catepillar/wp-content/uploads/cathedral.jpg");
+    //background-image: url("http://www.cocoonfx.co.uk/catepillar/wp-content/uploads/firstBanner.jpg");
+    background-image: url("http://www.cocoonfx.co.uk/catepillar/wp-content/uploads/homeBannerb.jpg");
 }
 .planningWrapper {
-    background-image: url("http://www.cocoonfx.co.uk/catepillar/wp-content/uploads/doctorSign.jpg");
-    background-attachment: initial;
+    background-image: url("http://www.cocoonfx.co.uk/catepillar/wp-content/uploads/planningBanner.jpg");
+    background-size: contain;
+    background-position-y: 100px;
 }
 .designWrapper {
-    background-image: url("http://www.cocoonfx.co.uk/catepillar/wp-content/uploads/homeBanner.jpg");
+    background-image: url("http://www.cocoonfx.co.uk/catepillar/wp-content/uploads/evaluateBanner.jpg");
 }
 .marketingWrapper {
-    background-image: url("http://www.cocoonfx.co.uk/catepillar/wp-content/uploads/speakersCorner.jpg");
+    background-image: url("http://www.cocoonfx.co.uk/catepillar/wp-content/uploads/marketingBanner-1.jpg");
 }
-.evaluateWrapper {
-    background-image: url("http://www.cocoonfx.co.uk/catepillar/wp-content/uploads/homeBanner.jpg");
-}
-.casestudyWrapper {
-    background-image: url("http://www.cocoonfx.co.uk/catepillar/wp-content/uploads/homeBanner.jpg");
-}
+.evaluateWrapper, .casestudyWrapper {
+    background-image: url("http://www.cocoonfx.co.uk/catepillar/wp-content/uploads/designBanner.jpg");
+    background-size: contain;
+	width: 100%;
+    background-position-y: top;
 
-
+}
 .homePAGE {clear: both;}
 
 .jamesHome, .circleImage {
@@ -657,13 +660,14 @@ img.caseImage {
     width: 150px;
     float: right;
 	border: 5px solid #2b9a96;
+    border: 3px solid #797979;
     border-radius: 50%;
 }
 .homeONE, .homeTWO, .homeTHREE, .homeFOUR {}
-.homeONE {border-top: 5px solid #a90920; margin-top:-40px;}
+.homeONE {border-top: 5px solid #c7d36e; margin-top:-40px;}
 .homeTWO {border-top: 5px solid #c7d36e;margin-top:-40px;}
-.homeTHREE {border-top: 5px solid #92bbff;}
-.homeFOUR {border-top: 5px solid #77dea8;}
+.homeTHREE {border-top: 5px solid #c7d36e;}
+.homeFOUR {border-top: 5px solid #c7d36e;}
 
 img.homeCENTER {
 	display: none;
@@ -766,6 +770,28 @@ box-shadow: 3px 3px 5px 0px rgba(74,74,74,1);
     background: #baea41;
     padding: 1rem 2rem;
 }
+.relHead {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    font-family: 'raleway',sans-serif;
+    font-weight: 400;
+    background-color: #92bbff;
+    letter-spacing: 1px;
+    color: #fff;
+    padding: 1rem;
+}
+ul.relArt {
+    padding: 0.8rem;
+    background-color: #f9f9f9;
+}
+
+.relArt li {
+    margin-bottom: 1px;
+    background-color: #ffffff;
+padding: 11px 40px 11px 11px;
+}
+.relArt li a {text-decoration: none;}
+
 .introduction {
     padding: 0px 1rem;
     margin: 0px 0px 120px 0px;
@@ -1469,6 +1495,10 @@ img.wp-post-image {
     left: auto; }
 
 @media only screen and (max-width: 40.062em) {
+
+.introWrapper, .designWrapper, .evaluateWrapper, .marketWrapper, .planningWrapper, .casestudyWrapper {
+    background-size: cover;
+}
 
 .logo {
     text-align: center;
@@ -2195,11 +2225,19 @@ input[type="text"], input[type="email"], textarea {
     content: 'Menu'!important;
     position: absolute!important;
     left: 6px!important;
-    bottom: -18px!important;
+    bottom: -8px!important;
     font-size: 0.8rem;
+   	color: #fff;
 }
 .responsive-menu-button:hover {color: #000 !important;}
 
 div#responsive-menu-title {
     padding: 45px 20px 45px 20px !important;
 }
+.responsive-menu-button {
+    background: none !important;
+}
+
+
+
+

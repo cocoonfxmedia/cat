@@ -28,7 +28,7 @@
 
 <footer id="colophon" class="colophon-footer" role="contentinfo">
 			<div class="small-12 medium-12 large-12 columns">
-         	
+         	Copyright ©<?php echo date('Y'); ?> Cocoonfxmedia Ltd
 			</div>
 </footer>
 

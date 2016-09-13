@@ -43,6 +43,7 @@ if( !empty($image) ): ?>
 
 	<img class="circle-image" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
 
+
 <?php endif; ?>
         </div>
 	</div>

@@ -46,8 +46,15 @@ Template Name: Standard Evalute
 
 <div class="row">
 
-	<div class="small-12 medium-4 large-3 columns">                     
-			Links:			
+	<div class="small-12 medium-4 large-3 columns">  
+                  
+			Related Articles:
+                   
+			<?php $my_query = new WP_Query('category_name=evaluate&posts_per_page=4');?>
+<?PHP while ($my_query->have_posts()) : $my_query->the_post();?>
+<li><a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_post_thumbnail();?><?php the_title(); ?></a></li>
+
+<?php endwhile; wp_reset_postdata(); ?>		
                         
 	</div>
 
@@ -77,13 +84,14 @@ Template Name: Standard Evalute
 	</div>
 
 	<div class="small-12 medium-12 large-3 columns">                     
-			Resources:
-<?php $my_query = new WP_Query('category_name=evaluate');?>
+			
+<div class="relHead">Case Studies:</div>	
+			<ul class="relArt">
+                       <?php $args = array('tag_id' => '43','posts_per_page' => 4); $my_query = new WP_Query( $args );?>
 <?PHP while ($my_query->have_posts()) : $my_query->the_post();?>
-<li><a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_post_thumbnail();?><?php the_title(); ?></a></li>
-
+<li><a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a></li>
 <?php endwhile; wp_reset_postdata(); ?>
-
+			</ul>
                         
 	</div>
 </div>
