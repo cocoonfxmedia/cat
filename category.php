@@ -11,23 +11,27 @@ Template Name: category
 <div class="breadcrumbs">
 <?php jb_breadcrumbs(); ?>
 </div><?php } ?>
+
+<div class="studyWrapper">
 <div class="row">
-	<div class="small-12 medium-12 large-12 columns">
-			
-<?php if (cat_is_ancestor_of(32, $cat) or is_category(32)):  ?>
- <h1 class="standard h1">
-  Case Studies:  <?php single_cat_title();  ?>
- </h1>                                                  
-<?php endif; ?>
-        <?php if (!cat_is_ancestor_of(32, $cat) && !is_category(32)):  ?>
- <h1 class="standard h1">
- Category: <?php single_cat_title();  ?>
- </h1>                                                  
-<?php endif; ?>                         
-                                 
-                                 
-	</div>
-    <div class="small-12 medium-2 large-2 columns">
+		<div class="small-12 medium-12 large-12 columns">
+			<?php if (cat_is_ancestor_of(32, $cat) or is_category(32)):  ?>
+
+			<h1 class="standard h1">
+  			Case Studies:  <?php single_cat_title();  ?>
+			 </h1> 
+
+                                                 
+		<?php endif; ?>
+        	<?php if (!cat_is_ancestor_of(32, $cat) && !is_category(32)):  ?>
+ 			<h1 class="standard h1">
+ 			Category: <?php single_cat_title();  ?>
+ 			</h1>                                                  
+		<?php endif; ?>                         
+</div>
+</div>
+    
+<div class="small-12 medium-2 large-2 columns">
 			<div class="introduction">
 
 			</div>
@@ -60,11 +64,11 @@ if( !empty($image) ): ?>
 
 <div class="row">
 
-	<div class="small-12 medium-2 large-2 columns">                     		
+	<div class="small-12 medium-2 large-3 columns">                     		
                         
 	</div>
    
-	<div class="small-12 medium-8 large-8 large-push-2 columns">     
+	<div class="small-12 medium-8 large-6 large-push-3 columns">     
          
 			<div class="pageContent designONE">
                        
@@ -92,7 +96,7 @@ if( !empty($image) ): ?>
 			</div>
  	</div> 
 
-	<div class="small-12 medium-3 large-2 columns">
+	<div class="small-12 medium-3 large-3 columns">
 
 			<ul>                     
 
@@ -115,15 +119,9 @@ if( !empty($image) ): ?>
 </div><!--CLOSEROW-->
 
 
-<div class="row">
-	<div class="small-12 medium-12 large-12 columns">
-
-
-	</div>
-</div><!--CLOSEROW-->
 
 
 
-</div>
+
 
 <?php get_footer(); ?>
