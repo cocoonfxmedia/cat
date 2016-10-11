@@ -46,26 +46,41 @@ Template Name: Blog
 
 <div class="row">
 
-	<div class="small-12 medium-2 large-2 columns">                     
-			Links:			
+	<div class="small-12 medium-2 large-3 columns">                     
                         
 	</div>
 
-	<div class="small-12 medium-8 large-8 columns">                     
-			<div class="pageContent designONE">
+	<div class="small-12 medium-8 large-6 large-pull-3 columns">                     
+		<div class="pageContent designONE">
 
                
 <?php 
 $paged = ( get_query_var( 'paged' ) ) ? absint( get_query_var( 'paged' ) ) : 1;
 $my_query = new WP_Query(['post_type' => 'post','posts_per_page' => get_option('posts_per_page'),'paged' => $paged] );?>
-          
-<?PHP while ($my_query->have_posts()) : $my_query->the_post();?>
-<h2><?php the_title(); ?></h2>
-<?php the_post_thumbnail();?>
-<li><a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_time('F jS, Y') ?> - <?php the_title_attribute(); ?></a></li>
-<?php the_excerpt(); ?>
+          <?PHP while ($my_query->have_posts()) : $my_query->the_post();?>
 
-<?php endwhile; ?>
+
+		<div class="postLists">
+	
+				<!-- <?php the_post_thumbnail();?> -->
+				<div class="postDate">
+            		<a href="<?php the_permalink(); ?>" rel="bookmark">
+						<div class="day"><?php the_time('d') ?><sup><?php the_time('S') ?></sup></div>
+						<div class="month"><?php the_time('M') ?></div>
+						<div class="year"><?php the_time('Y') ?></div>
+					</a>
+				</div> 
+
+				<div class="postSnippet">		
+					<h2><?php the_title(); ?></h2>
+					<?php the_excerpt();?>
+   
+ 					<?php endwhile; ?>
+
+				</div>      
+ 		</div>          
+
+
 
 <?php
 				$big = 999999999; // need an unlikely integer
@@ -80,40 +95,22 @@ $my_query = new WP_Query(['post_type' => 'post','posts_per_page' => get_option('
 
     
 
-</div>                        
-	</div>
+		</div>                        
+		</div>  
 
-	<div class="small-12 medium-3 large-2 columns">                     
-			Resources:
-<li id="categories"><h2><?php _e( 'Posts by Category' ); ?></h2>
-	<?php wp_dropdown_categories( 'show_option_none=Select category' ); ?>
-	<script type="text/javascript">
-		<!--
-		var dropdown = document.getElementById("cat");
-		function onCatChange() {
-			if ( dropdown.options[dropdown.selectedIndex].value > 0 ) {
-				location.href = "<?php echo esc_url( home_url( '/' ) ); ?>?cat="+dropdown.options[dropdown.selectedIndex].value;
-			}
-		}
-		dropdown.onchange = onCatChange;
-		-->
-	</script>
-</li>
+
+	<div class="small-12 medium-2 large-3 columns">                     
                         
 	</div>
-</div>
-
-
-
-<div class="row">
-	<div class="small-12 medium-12 large-12 columns">
-
-
-	</div>
-</div><!--CLOSEROW-->
-
-
 
 </div>
+
+
+
+
+
+
+
+
 <?php endwhile; ?>
 <?php get_footer(); ?>
