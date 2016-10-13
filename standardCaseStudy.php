@@ -18,39 +18,16 @@ Template Name: Standard Case Study
 <div class="row">
 
 	<div class="small-12 medium-12 large-12 columns">
-				<h1 class="standard h1"><?php the_title(); ?></h1>
+			<h1 class="standard h1"><?php the_title(); ?> standardcasestudy.php</h1>
 	</div>
 
 
-    <div class="small-12 medium-12 large-2 columns">
-			<div class="introduction">
-
-			</div>
-	</div>
-
-
-	<div class="small-12 medium-8 large-8 columns">
-		<div class="introduction">                              
-    
-  <?php $image = get_field('cs_logo');
-
-if( !empty($image) ): ?>
-
-		<img class="circleImage" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
-
-<?php endif; ?>
-        
-       Project Name  <?php the_field('cs_project_name'); ?>
-       Project Skills <?php the_field('cs_project_skills'); ?>
-       Project Outcomes <?php the_field('cs_project_outcome'); ?>
+	<div class="small-12 medium-12 large-12 columns">
+		<div class="introduction">                             
+       		<div class="projectDetail">Project Name:  <?php the_field('cs_project_name'); ?></div>
+       		<div class="projectDetail">Project Skills: <?php the_field('cs_project_skills'); ?></div>
+       		<div class="projectDetail">Project Outcomes: <?php the_field('cs_project_outcome'); ?></div>
         </div>
-	</div>
-
-
-    <div class="small-12 medium-4 large-2 columns">
-			<div class="introduction">
-
-			</div>
 	</div>
 
 </div><!--CLOSEROW-->
@@ -62,12 +39,12 @@ if( !empty($image) ): ?>
 
 <div class="row">
 
-	<div class="small-12 medium-4 large-2 columns">                     
+	<div class="small-12 medium-4 large-3 columns">                     
 			
                         
 	</div>
 
-	<div class="small-12 medium-8 large-8 large-push-2 columns">                     
+	<div class="small-12 medium-8 large-6 large-push-3 columns">                     
 			<div class="pageContent designONE">
 
 				<?php the_content(); ?>
@@ -84,7 +61,17 @@ if( !empty($image) ): ?>
 
 <div class="row">
 	<div class="small-12 medium-12 large-12 columns">
-
+<?php if (cat_is_ancestor_of(32, $cat) or is_category(32)):  ?>
+                       <ul>
+    <?php wp_list_categories( array(
+        'orderby'            => 'id',
+        'show_count'         => true,
+        'use_desc_for_title' => false,
+        'child_of'           => 32
+    ) ); ?>
+</ul>
+   
+<?php endif; ?>   
 
 	</div>
 </div><!--CLOSEROW-->
