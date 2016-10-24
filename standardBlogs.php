@@ -14,6 +14,7 @@ Template Name: Standard Blogs
 </div><?php } ?>
 
 
+<div class="blogWrapper">
 <div class="row">
 	<div class="small-12 medium-12 large-12 columns">
 				<h1 class="standard h1"><?php the_title(); ?></h1>
@@ -34,9 +35,7 @@ if( !empty($image) ): ?>
 
 <?php endif; ?>
         
-       Project Name  <?php the_field('cs_project_name'); ?>
-       Project Skills <?php the_field('cs_project_skills'); ?>
-       Project Outcomes <?php the_field('cs_project_outcome'); ?>
+  
         </div>
 	</div>
     <div class="small-12 medium-4 large-3 columns">
@@ -46,13 +45,18 @@ if( !empty($image) ): ?>
 		</div>
 
 </div><!--CLOSEROW-->
-
+</div>
 
 <div class="row">
 
-	<div class="small-12 medium-4 large-3 columns">                     
-			Links:			
-                        
+	<div class="small-12 medium-2 large-3 columns">                     
+               <h2 class="categories">Services</h2>
+  				<ul class="relArt">
+            			<li><a href="<?php echo esc_url( home_url( '/' ) );?>planning-a-website">Planning</a></li>
+            			<li><a href="<?php echo esc_url( home_url( '/' ) );?>website-design">Creating</a></li>
+            			<li><a href="<?php echo esc_url( home_url( '/' ) );?>website-marketing">Marketing</a></li>
+            			<li><a href="<?php echo esc_url( home_url( '/' ) );?>measure-and-evaluating-websites">Evaluate</a></li>
+              	</ul>
 	</div>
 
 	<div class="small-12 medium-8 large-6 columns">                     
@@ -60,37 +64,26 @@ if( !empty($image) ): ?>
 
 				<?php the_content(); ?>
                        
-</div>
-                 <div class="navigation">
-
-<?php previous_post_link(); ?> <?php next_post_link(); ?>
-<?php posts_nav_link(); ?>
-</div>              
-            
+			</div>
             <div class="navigation">
-<?php posts_nav_link( ' &#183; ', 'previous page', 'next page' ); ?>
-</div>
+				<?php previous_post_link(); ?> <?php next_post_link(); ?>
+				<?php posts_nav_link(); ?>
+			</div>              
 	</div>
 
 	<div class="small-12 medium-12 large-3 columns">                     
-			Services:
-
-<li id="categories"><h2><?php _e( 'Posts by Category' ); ?></h2>
-	<?php wp_dropdown_categories( 'show_option_none=Select category' ); ?>
-	<script type="text/javascript">
-		<!--
-		var dropdown = document.getElementById("cat");
-		function onCatChange() {
-			if ( dropdown.options[dropdown.selectedIndex].value > 0 ) {
-				location.href = "<?php echo esc_url( home_url( '/' ) ); ?>?cat="+dropdown.options[dropdown.selectedIndex].value;
-			}
-		}
-		dropdown.onchange = onCatChange;
-		-->
-	</script>
-</li>
-                        
+	    <h2 class="categories">Blog Categories</h2>			
+ 		<ul class="relArt">
+    			<?php wp_list_categories( array(
+      		'title_li' => '',
+        		'orderby'            => 'id',
+        		'show_count'         => true,
+        		'use_desc_for_title' => false,
+        		'cat'           => -32
+    			) ); ?>
+		</ul>
 	</div>
+
 </div>
 
 

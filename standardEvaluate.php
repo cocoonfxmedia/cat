@@ -24,10 +24,10 @@ Template Name: Standard Evalute
 			<div class="faceImage">
 			<?php 
 
+
 			$image = get_field('circle_image');
 
 			if( !empty($image) ): ?>
-
 			<img class="circleImage" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
 
 			<?php endif; ?>
@@ -48,15 +48,14 @@ Template Name: Standard Evalute
 
 	<div class="small-12 medium-4 large-3 columns">  
                   
-			Related Articles:
-                   
-			<?php $my_query = new WP_Query('category_name=evaluate&posts_per_page=4');?>
-<?PHP while ($my_query->have_posts()) : $my_query->the_post();?>
-<li><a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_post_thumbnail();?><?php the_title(); ?></a></li>
-
-<?php endwhile; wp_reset_postdata(); ?>		
-                        
-	</div>
+<div class="relHead">Related Articless:</div>	
+			<ul class="relArt">
+				<?php $my_query = new WP_Query('category_name=evaluate&posts_per_page=4');?>
+				<?PHP while ($my_query->have_posts()) : $my_query->the_post();?>
+				<li><a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_post_thumbnail();?><?php the_title(); ?></a></li>
+				<?php endwhile; wp_reset_postdata(); ?>		
+			</ul>           
+		</div>
 
 	<div class="small-12 medium-8 large-6 columns">                     
 			<div class="pageContent measureONE">

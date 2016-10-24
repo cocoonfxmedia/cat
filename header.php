@@ -86,29 +86,7 @@
 <!-- <div class="arrow bounce">
 
 </div> -->
-<div id="casePop">
-        <h3 class="rotate">Case Studies</h3>
-        <div id="casePop_inner">
-            <div id="casePop_inner2">
 
-            <?php $my_query = new WP_Query('category_name=case-studies&posts_per_page=5');?>
-			<?PHP while ($my_query->have_posts()) : $my_query->the_post();?>
-
-<div class="csSep">
-            <?php $image = get_field('cs_logo');
-
-if( !empty($image) ): ?>
-			<img class="circleImage" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
-
-<?php endif; ?>
-			<h4><a href="<?php the_permalink(); ?>" rel="bookmark"> <?php the_title_attribute(); ?></a></h4>
-			<?php the_excerpt(); ?>
-</div>
-			<?php endwhile;?>
-       		</div>
-
-        </div>
-</div>
 
 
 <div id="slideout">
