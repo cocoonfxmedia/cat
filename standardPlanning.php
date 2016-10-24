@@ -45,13 +45,24 @@ Template Name: Standard Planning
 </div>
 
 <div class="row">
-	<div class="small-12 medium-2 large-3 columns">                     
+	<div class="small-12 medium-2 large-3 columns">                  
                <h2 class="categories">Services</h2>
+               <?php jb_services(); ?>
   				<ul class="relArt">
-                                    <li><h3>Web Design</h3></li>
-                                    <li><h3>Web Development</h3></li>
-                                    <li><h3>Search Engine Optimisation (SEO)</h3></li>
-                                    <li><h3>Marketing</h3></li>
+                                    <li>
+                                        <h3>Web Design</h3>
+                                        All our websites and designed with the user goals. <br/>Click here for more information.
+                                    </li>
+                                    <li><h3>Web Development</h3>
+                                    We can develop pretty much anything from custom e-commerce to content management systems.<br/> click here for more information.
+                                    </li>
+                                    <li><h3>Search Engine Optimisation (SEO)</h3>
+                                    SEO is often known as a dark art. We provide clarity with tried and tested methods to gain more traffic and improve Keyword rankings.<br/> click here for more information.
+                                    </li>
+                                    <li><h3>Marketing</h3>
+                                    From writing marketing strategies to content marketing. We will help you market your business to your target audience with measurable marketing solutions.<br/> Click here or more information.
+                                    
+                                    </li>
               	</ul>
 	</div>
 
