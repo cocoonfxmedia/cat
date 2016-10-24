@@ -45,17 +45,16 @@ Template Name: Standard Planning
 </div>
 
 <div class="row">
-
-	<div class="small-12 medium-4 large-3 columns">                     
-			<div class="relHead">Related Articles:</div>
-			<ul class="relArt">
-                        <?php $my_query = new WP_Query('category_name=planning&posts_per_page=4');?>
-						<?PHP while ($my_query->have_posts()) : $my_query->the_post();?>
-						<li><a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_post_thumbnail();?><?php the_title(); ?></a></li>
-						<?php endwhile; wp_reset_postdata(); ?>
-			</ul>
-                        
+	<div class="small-12 medium-2 large-3 columns">                     
+               <h2 class="categories">Services</h2>
+  				<ul class="relArt">
+                                    <li><h3>Web Design</h3></li>
+                                    <li><h3>Web Development</h3></li>
+                                    <li><h3>Search Engine Optimisation (SEO)</h3></li>
+                                    <li><h3>Marketing</h3></li>
+              	</ul>
 	</div>
+
 
 	<div class="small-12 medium-8 large-6 columns">                     
 			<div class="pageContent planONE">
@@ -94,7 +93,20 @@ Template Name: Standard Planning
 
 
                         
+
+        
+        	               
+			<div class="relHead">Related Articles:</div>
+			<ul class="relArt">
+                        <?php $my_query = new WP_Query('category_name=planning&posts_per_page=4');?>
+						<?PHP while ($my_query->have_posts()) : $my_query->the_post();?>
+						<li><a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_post_thumbnail();?><?php the_title(); ?></a></li>
+						<?php endwhile; wp_reset_postdata(); ?>
+			</ul>
+                        
 	</div>
+        
+        
 </div>
 
 
