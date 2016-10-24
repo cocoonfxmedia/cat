@@ -32,8 +32,7 @@
 			) ); wp_link_pages( array(
 				'before'      => '<div class="page-links"><span class="page-links-title">' . __( 'Pages:', 'twentyfifteen' ) . '</span>',
 				'after'       => '</div>',
-				'link_before' => '<span>',
-				'link_after'  => '</span>',
+				
 				'pagelink'    => '<span class="screen-reader-text">' . __( 'Page', 'twentyfifteen' ) . ' </span>%',
 				'separator'   => '<span class="screen-reader-text">, </span>',
 			) );
@@ -42,7 +41,7 @@
  <div class="row">
  <div class="navigation">
 
-<?php previous_post_link('%link'); ?><?php next_post_link('%link'); ?>
+<?php previous_post_link(); ?><?php next_post_link(); ?>
 
 </div> <!-- end navigation -->
     </div>
