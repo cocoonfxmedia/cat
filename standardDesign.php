@@ -49,14 +49,16 @@ Template Name: Standard Design
 
 <div class="row">
 
-	<div class="small-12 medium-4 large-3 columns">                     
-			<div class="relHead">Related Articles:</div>	
-			<ul class="relArt">
-                        <?php $my_query = new WP_Query('category_name=creative&posts_per_page=4');?>
-						<?PHP while ($my_query->have_posts()) : $my_query->the_post();?>
-						<li><a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_post_thumbnail();?><?php the_title(); ?></a></li>
-						<?php endwhile; wp_reset_postdata(); ?>
-			</ul>
+	<div class="small-12 medium-4 large-3 columns">       
+                <h2 class="categories">Services</h2>
+             
+  				<ul class="relArt">
+                                    <?php jb_services(); ?>
+              	</ul>
+            
+            
+            
+		
 
                         
 	</div>
@@ -94,7 +96,13 @@ Template Name: Standard Design
 <li><a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a></li>
 <?php endwhile; wp_reset_postdata(); ?>
 			</ul>
-
+	<div class="relHead">Related Articles:</div>	
+			<ul class="relArt">
+                        <?php $my_query = new WP_Query('category_name=creative&posts_per_page=4');?>
+						<?PHP while ($my_query->have_posts()) : $my_query->the_post();?>
+						<li><a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_post_thumbnail();?><?php the_title(); ?></a></li>
+						<?php endwhile; wp_reset_postdata(); ?>
+			</ul>
                         
 	</div>
 </div>
