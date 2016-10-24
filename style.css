@@ -580,7 +580,7 @@ margin-bottom: 0px;
     -moz-box-shadow: 3px 3px 5px 0px rgba(74,74,74,1);
     box-shadow: 3px 3px 5px 0px rgba(74,74,74,1);}
 
-.callButton{    
+.callButton{
 	width: 100%;
     padding: 15px;
     height: 50px;
@@ -796,7 +796,7 @@ ul.relArt {
     padding: 0.8rem;
     background-color: #f9f9f9;
 }
-
+.relArt h3{font-size:1.2rem;}
 .relArt li {
     margin-bottom: 1px;
     background-color: #ffffff;
@@ -947,7 +947,7 @@ sup {
     background-color: #000000;
     padding: 10px;
     height: 60px;
-	margin-bottom: 40px;    
+	margin-bottom: 40px;
 	-webkit-box-shadow: 3px 3px 5px 0px rgba(74,74,74,1);
     -moz-box-shadow: 3px 3px 5px 0px rgba(74,74,74,1);
     box-shadow: 3px 3px 5px 0px rgba(74,74,74,1);
