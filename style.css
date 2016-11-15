@@ -720,6 +720,7 @@ img.marketCENTER {
 .marketTWO {//background-color: #123ec5;margin-top:-40px;}
 .marketTHREE {//background-color: #051fad;}
 .marketFOUR {//background-color: #010f98;}
+
 img.marketCENTER {
 	display: none;
     position: absolute;
@@ -755,6 +756,9 @@ box-shadow: 3px 3px 5px 0px rgba(74,74,74,1);
 -moz-box-shadow: 3px 0px 5px 0px rgba(74,74,74,1);
 box-shadow: 3px 0px 5px 0px rgba(74,74,74,1);
 }
+.LandingLeft{width:55%;display: inline-block;}
+.LandingRight{width:45%;float:right;display: inline-block;}
+.LandingRight h2{text-align: center;}
 .boxed a {
     display: block;
     text-align: center;
