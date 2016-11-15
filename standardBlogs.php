@@ -66,7 +66,7 @@ if( !empty($image) ): ?>
                        
 			</div>
             <div class="navigation">
-				<?php previous_post_link(); ?> <?php next_post_link(); ?>
+				<?php previous_post_link('%link'); ?> <?php next_post_link('%link'); ?>
 				<?php posts_nav_link(); ?>
 			</div>              
 	</div>

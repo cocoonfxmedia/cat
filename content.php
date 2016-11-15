@@ -17,7 +17,7 @@
                     
                      <h1 class="standardH1"><?php the_title(); ?></h1>
                  
-                  
+             
               
 		</div>
 </div>
@@ -25,7 +25,7 @@
 <div class="small-12 medium-8 large-8 medium-push-2 large-push-2 columns posts">
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
-	
+	TEST TEST
 		<?php /* translators: %s: Name of current post */ the_content( sprintf(
 				__( 'Continue reading %s', 'twentyfifteen' ),
 				the_title( '<span class="screen-reader-text">', '</span>', false )

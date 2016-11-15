@@ -39,7 +39,7 @@ Template Name: Homepage
 		<div class="small-12 medium-6 large-6 columns">
 			<div class="boxed homeONE">
 				<h2>1. PLANNING YOUR WEBSITE</h2>
-				<h3>Set your route to success with a dedicated planning advisor</h3>
+				<h3>Set your route to success with a properly planned website</h3>
 				
 				<ul>
 				<li><strong>Initial Consultation:</strong> Reveal your online business potential with a free consultation</li>
@@ -58,7 +58,8 @@ Template Name: Homepage
 		<div class="small-12 medium-6 large-6 columns">
             <div class="boxed homeTWO">
 				<h2>2. Creating</h2>
-				<h3>Become the online authority for your business with a must-visit influential website developed with the latest technology</h3>
+                                <h3>Your website designed to your business goals</h3>
+				<p>Become the online authority for your business with a must-visit influential website developed with the latest technology</p>
 
 				<ul>
 				<li><strong>Design Brief:</strong> </li>
@@ -66,6 +67,7 @@ Template Name: Homepage
 				<li><strong>Visual Designs:</strong></li>	
 				<li><strong>Build and Development:</strong></li>
 				</ul>
+			
 			</div>	
   
             <div class="boxButton">
@@ -103,7 +105,7 @@ Template Name: Homepage
 		<div class="small-12 medium-6 large-6 columns">
             <div class="boxed homeFOUR">
 				<h2>3. EVALUATING PROGRESS</h2>
-				<h3>Discover your return on investment with honest, straightforward progress reports</h3>
+				<h3>Discover your return on investment with a straightforward reporting</h3>
 
 				<ul>
 				<li><strong>Meeting Objectives:</strong> Stay in control with regular monitoring of progression</li>

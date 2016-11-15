@@ -940,7 +940,7 @@ sup {
     margin-top: -40px;
 }
 .navigation a[rel="prev"], .navigation a[rel="next"] {
-    width: 49%;
+    width: 50%;
     display: block;
     float: left;
     color: #fff;
