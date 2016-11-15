@@ -49,38 +49,24 @@ Template Name: Landing Pages
 
 <div class="row marketingBar">
 
-	<div class="small-12 medium-4 large-3 columns">                     
-			    <h2 class="categories">Services</h2>
-             
-  				<ul class="relArt">
-                                    <?php jb_services(); ?>
-              	</ul>
-                        
-	</div>
 
-	<div class="small-12 medium-8 large-6 columns">                     
+
+	<div class="small-12 medium-8 large-8 large-push-1 columns">                     
 			<div class="pageContent marketONE">
-
+                            <div class="LandingLeft">
 				<?php the_content(); ?>
+                            </div>
+                            <div class="LandingRight">
+                                <h2>Get in Contact</h2>
+                                <?php echo do_shortcode('[contact-form-7 id="3721" title="PPC Contact Form"]' ); ?>
+
+                            </div>
 			</div> 
                           <div class="callAction">
                  <a class="callButton" href="<?php echo esc_url( home_url( '/' ) );?>contact-us">Call Us Now</a>
                      </div>
            
-            <div class="callAction">   
-                  <?php if (is_page('marketing-objectives')) { ?>
-              <a class="callNextPage" href="<?php echo esc_url( home_url( '/' ) );?>website-marketing/strategy/">Next Step: Marketing Strategy</a>
-             <?php } ?>
-     <?php if (is_page('strategy')) { ?>
-              <a class="callNextPage" href="<?php echo esc_url( home_url( '/' ) );?>website-marketing/tactics/">Next Step: Marketing Tactics</a>
-             <?php } ?>
-                 <?php if (is_page('tactics')) { ?>
-              <a class="callNextPage" href="<?php echo esc_url( home_url( '/' ) );?>website-marketing/audit-analysis/">Next Step: Marketing Audits Analysis</a>
-             <?php } ?>
-                    <?php if (is_page('audit-analysis')) { ?>
-              <a class="callNextPage" href="<?php echo esc_url( home_url( '/' ) );?>measure-and-evaluating-websites">Next Step: Measure & Evaluating Website</a>
-             <?php } ?>
-                 </div>
+           
 	</div>
 
 	<div class="small-12 medium-12 large-3 columns">                     
@@ -105,7 +91,7 @@ Template Name: Landing Pages
 
 <div class="row">
 	<div class="small-12 medium-12 large-12 columns">
-
+          
 
 	</div>
 </div><!--CLOSEROW-->
