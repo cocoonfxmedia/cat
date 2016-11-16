@@ -61,19 +61,15 @@ table {
 p {
     margin-bottom: 1.5rem;
     font-size: 1rem;
-    font-family: 'open-sans', sans-serif;
+    font-family: 'open sans', sans-serif;
     line-height: 1.45em;
+
 }
-.mainBanner p{color:#fff;}
-.boxed p {
-    color: #656565;
-    font-family: 'open sans';
-    line-height: 1.5rem;
-    text-transform: uppercase;
-}
+.mainBanner p{color:#fff; font-size: 1.5em;font-weight: 200;margin-bottom: 1rem;}
+.boxed p {color: #656565;font-family: 'open sans';line-height: 1.5rem;/*    text-transform: uppercase;*/}
 h1 {
   	font-size: 4rem;
-  	font-weight: 700;
+/*  	font-weight: 700;*/
   	line-height: 4rem;
   	font-family: 'raleway';
 	margin-bottom: 1rem;
@@ -100,15 +96,18 @@ h2 {
 }
 .boxed h2 {
     font-family: 'lato';
-    font-weight: 800;
+/*    font-weight: 800;*/
     text-transform: uppercase;
-    font-size: 1.2rem;
+/*    font-size: 1.2rem;*/
+font-size:2rem;
+font-weight:400;
 
 }
 
 h3 {
     	margin-bottom: 20px;
-    	font-size: 2em;
+/*    	font-size: 2em;*/
+        font-size: 1.7em;
     	font-family: 'Raleway', sans-serif;
     	font-weight: 200;
 }
@@ -243,7 +242,8 @@ strong {
     color: #fff;
 }
 .telephoneQ {
-    font-weight: 600;
+/*    font-weight: 600;*/
+font-weight:100;
 }
 .telepnhone {
     font-family: 'lato', sans-serif;
@@ -267,7 +267,7 @@ strong {
 }
 .breadcrumbs li {
     display: inline;
-	color: darkseagreen
+	color: darkseagreen;
 }
 .breadcrumbs li a{color:#d5e467;}
 
@@ -759,6 +759,19 @@ box-shadow: 3px 0px 5px 0px rgba(74,74,74,1);
 .LandingLeft{width:55%;display: inline-block;}
 .LandingRight{width:45%;float:right;display: inline-block;}
 .LandingRight h2{text-align: center;}
+.LandingRight input[type="text"], input[type="email"],input[type="tel"],  textarea {
+    background-color: #efefef;
+    border-radius: 3px !important;
+    border-style: none none solid;
+    font-size: 14px;
+    line-height: 22px;
+    margin-bottom: 10px !important;
+    margin-top: 5px;
+    padding: 10px !important;
+    width: 80% !important;
+     margin-left: 50px;
+}
+.LandingRight input[type="submit"]{width:80%;margin-left: 10%;}
 .boxed a {
     display: block;
     text-align: center;
@@ -820,11 +833,11 @@ ul.children {
 }
 .introduction p, .quote {
     margin: 0 auto;
-    font-size: 1.8rem;
+    font-size: 1.7rem;
     font-weight: 200 !important;
     font-family: 'raleway', sans-serif;
     text-align: center;
-    color: #fff;wcv
+    color: #fff;
 }
 .quote {
     width: 60%;
@@ -1075,20 +1088,14 @@ background-size: 205px 40px;
 background-size: 205px 40px;
 }
 
-
-
-
-
 /* =Colophon
 -------------------------------------------------------------- */
 #colophon {background-color: #293c34;padding: 20px;}
 #colophon p {text-align: center;margin-bottom:0px;}
 #colophon a {color: #000;font-size: 0.8rem;}
 
-
 /* =Repeatable patterns
 -------------------------------------------------------------- */
-
 
 /* Small headers */
 .archive-title,
@@ -1349,8 +1356,6 @@ img.wp-post-image {
 }
 
 
-
-
 /* =Responsive frame
 -------------------------------------------------------------- */
 .row {
@@ -1423,8 +1428,6 @@ img.wp-post-image {
 .small-6.medium-4.large-3.columns.caseBox {
     float: left;
 }
-
-
 .push-0 {
     position: relative;
     left: 0%;
@@ -1548,8 +1551,7 @@ img.wp-post-image {
 @media only screen and (max-width: 40.062em) {
 
 .introWrapper, .designWrapper, .evaluateWrapper, .marketWrapper, .planningWrapper, .casestudyWrapper {
-    background-size: cover;
-}
+     background-size:cover;}
 
 .logo {
     text-align: center;
@@ -1639,7 +1641,7 @@ img.wp-post-image {
     left: 66.66667%;
     right: auto; }
 
-  .small-pull-8 {e    position: relative;
+  .small-pull-8 {position: relative;
     right: 66.66667%;
     left: auto; }
 
@@ -1781,7 +1783,8 @@ img.wp-post-image {
 
   .column.small-uncentered.opposite,
   .columns.small-uncentered.opposite {
-    float: right; } }
+    float: right; }
+}
 
 @media only screen and (min-width: 40.063em) {
 
