@@ -208,19 +208,20 @@ echo '<li class="breadarrow"> &raquo;</li><li class="breadhome"> <a href="'. $ho
 }
 
 function jb_services(){
+   
     echo '
                                     <li>
                                         <h3>Web Design</h3>
-                                        All our websites and designed with the user goals. <br/>Click here for more information.
+                                        All our websites and designed with the user goals. <br/><a href="/web-design">Click here</a> for more information.
                                     </li>
                                     <li><h3>Web Development</h3>
-                                    We can develop pretty much anything from custom e-commerce to content management systems.<br/> click here for more information.
+                                    We can develop pretty much anything from custom e-commerce to content management systems.<br/> <a href="/web-development">Click here</a> for more information.
                                     </li>
                                     <li><h3>Search Engine Optimisation (SEO)</h3>
-                                    SEO is often known as a dark art. We provide clarity with tried and tested methods to gain more traffic and improve Keyword rankings.<br/> click here for more information.
+                                    SEO is often known as a dark art. We provide clarity with tried and tested methods to gain more traffic and improve Keyword rankings.<br/> <a href="/search-engine-optimisation">Click here</a> for more information.
                                     </li>
                                     <li><h3>Marketing</h3>
-                                    From writing marketing strategies to content marketing. We will help you market your business to your target audience with measurable marketing solutions.<br/> Click here or more information.
+                                    From writing marketing strategies to content marketing. We will help you market your business to your target audience with measurable marketing solutions.<br/> <a href="/website-marketing/">Click here</a> or more information.
                                     
                                     </li>';
     
