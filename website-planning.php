@@ -41,8 +41,11 @@ Template Name: Planning
         	<img class="marketCENTER" src="<?php echo esc_url( home_url( '/' ) );?>wp-content/uploads/centerDot.svg"/>
                 <div class="boxed planONE">
 					<h2>Why do I need a website</h2>
-					<h3>What is the reasoning behind this</h3>
-
+					<h3>What is the reasoning behind this?</h3>
+                                        <ul>
+                                        <li>It can be very stressful trying to understand what you want.</li>
+                                        <li>Click below and start the journey which can answer your questions</li>
+                                        </ul>
 			</div>	
   
             <div class="boxButton">
