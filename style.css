@@ -799,7 +799,7 @@ box-shadow: 3px 3px 5px 0px rgba(74,74,74,1);
     padding: 1rem 2rem;
 }
 .relHead, .categories{
-    font-size: 0.8rem;
+    font-size: 1rem;
     text-transform: uppercase;
     font-family: 'raleway',sans-serif;
     font-weight: 400;
@@ -813,13 +813,13 @@ ul.relArt {
     padding: 0.8rem;
     background-color: #f9f9f9;
 }
-.relArt h3{font-size:1.2rem;}
+.relArt h3{font-size:1.2rem;font-weight:400;}
 .relArt li {
     margin-bottom: 1px;
     background-color: #ffffff;
 	padding: 11px 10px 11px 11px;
 }
-.relArt li a, {text-decoration: none;}
+.relArt li a {text-decoration: none;}
 
 ul.children {
     margin-top: 10px;
