@@ -37,7 +37,7 @@ Template Name: Design
 <section class="row designPAGE">
 		<div class="small-12 medium-6 large-6 columns">
       		<div class="boxed designONE">
-				<h2>Creative Design Brief</h2>
+				<h2>1. Creative design brief</h2>
 				<h3>Identify goals that rapidly boost business</h3>
 				<p>Inclusion:
 				<ul>
@@ -58,7 +58,7 @@ Template Name: Design
 
 		<div class="small-12 medium-6 large-6 columns">
             <div class="boxed designTWO">
-				<h2>Functionality</h2>
+				<h2>2. Functionality</h2>
 				<h3>Identify user demands and functionality</h3>
 				<p>Inclusion:
 				<ul>
@@ -80,7 +80,7 @@ Template Name: Design
 <section class="row designPAGE">
 		<div class="small-12 medium-6 large-6 columns">
             <div class="boxed designTHREE">
-				<h2>Visual Designs</h2>
+				<h2>3. Visual designs</h2>
 				<h3>Designs created around business objectives</h3>
 				<p>Inclusion:
 				<ul>
@@ -100,7 +100,7 @@ Template Name: Design
 
 		<div class="small-12 medium-6 large-6 columns">
 			<div class="boxed designFOUR">
-				<h2>Build and Development</h2>
+				<h2>4. Build and development</h2>
 				<h3>Moving the project from design to reality</h3>
 				<p>Inclusion:
 				<ul>

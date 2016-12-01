@@ -19,7 +19,7 @@ Template Name: Case Study
 <div class="row">
 
 	<div class="small-12 medium-12 large-12 columns">
-			<h1 class="standard h1"><?php the_title(); ?> - case-study.php</h1>
+			<h1 class="standard h1"><?php the_title(); ?></h1>
 	</div>
 
     <div class="small-12 medium-4 large-2 columns">

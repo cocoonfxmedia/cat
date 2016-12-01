@@ -29,6 +29,12 @@ Template Name: category
  			</h1>                                                  
 		<?php endif; ?>                         
 </div>
+      <div class="small-12 medium-8 large-8 large-pull-2 columns">
+		<div class="introduction">                              
+    	<p><?php the_field('cfx_quote'); ?></p>
+                                
+        </div>
+	</div>
 </div>
 </div>
 

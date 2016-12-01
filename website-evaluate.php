@@ -36,7 +36,7 @@ Template Name: Measure & Evaluate
 
 		<div class="small-12 medium-6 large-6 columns">  
             <div class="boxed measureONE">
-				<h2>Meeting Objectives</h2>
+				<h2>1. Meeting objectives</h2>
 				<h3>Stay in control with regular monitoring of progression </h3>
 				<p>
 				<ul>
@@ -57,7 +57,7 @@ Template Name: Measure & Evaluate
 
 		<div class="small-12 medium-6 large-6 columns">
             <div class="boxed measureTWO">
-				<h2>KPIs and Targets</h2>
+				<h2>2. KPIs and targets</h2>
 				<h3>Keep on track with systematic checks and goal achievement alerts</h3>
 				<p>
 				<ul>
@@ -80,7 +80,7 @@ Template Name: Measure & Evaluate
 <section class="row measurePAGE">
 		<div class="small-12 medium-6 large-6 columns">
             <div class="boxed measureTHREE">
-				<h2>ROI Reporting</h2>
+				<h2>3. ROI Reporting</h2>
 				<h3>Witness your successes and improvements first hand with understandable analytic reports</h3>
 				<p>
 				<ul>
@@ -101,7 +101,7 @@ Template Name: Measure & Evaluate
 
 		<div class="small-12 medium-6 large-6 columns">
             <div class="boxed measureFOUR">
-				<h2>Reviews</h2>
+				<h2>4. Reviews</h2>
 				<h3>ROI Reporting: Inform future marketing plans using insightful evaluation reviews</h3>
 				<p>
 				<ul>

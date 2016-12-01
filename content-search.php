@@ -9,31 +9,26 @@
  * @since Cocoonfxmedia-v1.0
  */
 ?>
+
   <div class="row">
-<div class="small-12 medium-12 large-12 columns">
+<div class="postLists">		
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	
 	
 		<?php the_title( sprintf( '<h2><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
-	
-
+		<div class="postDate">
+            		<a href="<?php the_permalink(); ?>" rel="bookmark">
+						<div class="day"><?php the_time('d') ?><sup><?php the_time('S') ?></sup></div>
+						<div class="month"><?php the_time('M') ?></div>
+						<div class="year"><?php the_time('Y') ?></div>
+					</a>
+				</div> 
+<div class="postSnippet">	
 	
 		<?php the_excerpt(); ?>
+</div>
 	
-
-	<?php if ( 'post' == get_post_type() ) : ?>
-
-		<footer class="entry-footer">
-			<?php twentyfifteen_entry_meta(); ?>
-			<?php edit_post_link( __( 'Edit', 'twentyfifteen' ), '<span class="edit-link">', '</span>' ); ?>
-		</footer><!-- .entry-footer -->
-
-	<?php else : ?>
-
-		<?php edit_post_link( __( 'Edit', 'twentyfifteen' ), '<footer class="entry-footer"><span class="edit-link">', '</span></footer><!-- .entry-footer -->' ); ?>
-
-	<?php endif; ?>
 
 </article><!-- #post-## -->
 </div>
-  </div>
+ </div>

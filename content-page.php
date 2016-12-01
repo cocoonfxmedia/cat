@@ -13,10 +13,7 @@
   <div class="row">
 <div class="small-12 medium-12 large-12 columns">
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<?php
-		// Post thumbnail.
-		twentyfifteen_post_thumbnail();
-	?>
+	<?php twentyfifteen_post_thumbnail();?>
 
 	
 		<?php the_title( '<h1>', '</h1>' ); ?>

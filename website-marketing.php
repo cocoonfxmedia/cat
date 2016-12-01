@@ -37,7 +37,7 @@ Template Name: Marketing
 		<div class="small-12 medium-6 large-6 columns">
         	<img class="marketCENTER" src="<?php echo esc_url( home_url( '/' ) );?>wp-content/uploads/centerDot.svg"/>
                 <div class="boxed marketONE">
-					<h2>Marketing Objectives</h2>
+					<h2>1. Marketing objectives</h2>
 					<h3>Obtain recognition by reaching achievable and rewarding marketing goals</h3>
 					<p>Included
 					<ul>
@@ -59,7 +59,7 @@ Template Name: Marketing
 
 		<div class="small-12 medium-6 large-6 columns">
                 <div class="boxed marketTWO">
-					<h2>Strategy</h2>
+					<h2>2. Strategy</h2>
 					<h3>Achieve your marketing goals with a data-enhanced action plan</h3>
 					<p>Included
 					<ul>
@@ -82,7 +82,7 @@ Template Name: Marketing
 
 		<div class="small-12 medium-6 large-6 columns">
                 <div class="boxed marketTHREE">
-					<h2>Tactics</h2>
+					<h2>3. Tactics</h2>
 					<h3>Delve into a world of effective marketing tools, techniques and creativity that captivates audiences</h3>
 					<p>Included
 					<ul>
@@ -103,7 +103,7 @@ Template Name: Marketing
 
 		<div class="small-12 medium-6 large-6 columns">
  			<div class="boxed marketFOUR">
-				<h2>Audit and Analysis</h2>
+				<h2>4. Audit and analysis</h2>
 				<h3>Match the needs of your customer with in-depth reviews and targeted improvements</h3>
 				<p>Included
 				<ul>

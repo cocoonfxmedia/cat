@@ -16,36 +16,27 @@ Template Name: Standard Blogs
 
 <div class="blogWrapper">
 <div class="row">
+
 	<div class="small-12 medium-12 large-12 columns">
-				<h1 class="standard h1"><?php the_title(); ?></h1>
-	</div>
+			<h1 class="standard h1"><?php the_title(); ?></h1>
+			</div>
+
     <div class="small-12 medium-12 large-3 columns">
-			<div class="introduction">
-
 			</div>
-		</div>
-    <div class="small-12 medium-8 large-6 columns">
-<div class="introduction">                              
     
-  <?php $image = get_field('cs_logo');
-
-if( !empty($image) ): ?>
-
-	Logo: <img class="circleImage" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
-
-<?php endif; ?>
-        
-  
-        </div>
-	</div>
-    <div class="small-12 medium-4 large-3 columns">
-			<div class="introduction">
-
+	<div class="small-12 medium-8 large-6 large-push-3 columns">
+			<div class="published">Published date: <?php the_date(); ?></div>
+			<div class="modified">Last modified: <?php the_modified_date(); ?></div>  
 			</div>
-		</div>
+   
+	 <div class="small-12 medium-4 large-3 columns">
+			</div>
 
 </div><!--CLOSEROW-->
 </div>
+
+
+
 
 <div class="row">
 
@@ -59,21 +50,21 @@ if( !empty($image) ): ?>
               	</ul>
 	</div>
 
-	<div class="small-12 medium-8 large-6 columns">                     
-			<div class="pageContent designONE">
+	<div class="small-12 medium-8 large-6 columns">  
+				<div class="pageContent designONE">
+					<?php the_content(); ?>
+                     	</div>
 
-				<?php the_content(); ?>
-                       
-			</div>
-            <div class="navigation">
-				<?php previous_post_link('%link'); ?> <?php next_post_link('%link'); ?>
-				<?php posts_nav_link(); ?>
-			</div>              
+            		<div class="navigation">
+					<div class="prev"><?php previous_post_link('%link'); ?> </div>
+					<div class="next"><?php next_post_link('%link'); ?> </div>
+					<?php posts_nav_link(); ?>
+					</div>              
 	</div>
 
 	<div class="small-12 medium-12 large-3 columns">                     
-	    <h2 class="categories">Blog Categories</h2>			
- 		<ul class="relArt">
+	    		<h2 class="categories">Blog Categories</h2>			
+ 			<ul class="relArt">
     			<?php wp_list_categories( array(
       		'title_li' => '',
         		'orderby'            => 'id',
@@ -81,19 +72,12 @@ if( !empty($image) ): ?>
         		'use_desc_for_title' => false,
         		'cat'           => -32
     			) ); ?>
-		</ul>
+			</ul>
 	</div>
 
 </div>
 
 
-
-<div class="row">
-	<div class="small-12 medium-12 large-12 columns">
-
-
-	</div>
-</div><!--CLOSEROW-->
 
 
 

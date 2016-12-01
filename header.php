@@ -61,39 +61,27 @@
   <div class="cfx-col11"></div>
   <div class="cfx-col12"></div>
 </div>	
-
 				<div class="logo">
-     			<a href="<?php echo esc_url( home_url( '/' ) );?>"><img src="<?php echo esc_url( home_url( '/' ) );?>wp-content/uploads/cfxLogo.svg"/></a>
-     			
-
+     			<a href="<?php echo esc_url( home_url( '/' ) );?>"><img src="<?php echo esc_url( home_url( '/' ) );?>wp-content/uploads/cfxLogo.svg" title='Cocoonfxmedia Homepage'/></a>
+     			 
 </div>
-
 
 				<div class="number">
                 <div class="telephoneQ">The quickest way to find something out!</div>
                 <div class="telepnhone">01543 223074</div>
 				</div>
-
-
-
 				<!-- <nav class="mainnav">				
 				<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'nav-menu' ) ); ?>
 				</nav> -->
 
-
-	
 </header>
-<!-- <div class="arrow bounce">
-
-</div> -->
-
-
-
+    <?php if (!is_page('contact-us')) { ?>
 <div id="slideout">
 		<h3 class="rotate">Contact Us</h3>
   		<div id="slideout_inner">
-			<?php echo do_shortcode('[contact-form-7 id="3500" title="Contact form 1"]');?>
+			<?php echo do_shortcode('[contact-form-7 id="3500" title="Main Contact"]');?>
 		</div>
 </div>
+       <?php } ?>
 
 

@@ -38,7 +38,7 @@ Template Name: Homepage
 <section class="row homePAGE">
 		<div class="small-12 medium-6 large-6 columns">
 			<div class="boxed homeONE">
-				<h2>1. PLANNING YOUR WEBSITE</h2>
+				<h2>1. Planning your website</h2>
 				<h3>Set your route to success with a properly planned website</h3>
 				
 				<ul>
@@ -57,7 +57,7 @@ Template Name: Homepage
 
 		<div class="small-12 medium-6 large-6 columns">
             <div class="boxed homeTWO">
-				<h2>2. Creating</h2>
+				<h2>2. Website design</h2>
                                 <h3>Your website designed to your business goals</h3>
 				<p>Become the online authority for your business with a must-visit influential website developed with the latest technology</p>
 
@@ -85,7 +85,7 @@ Template Name: Homepage
 
 		<div class="small-12 medium-6 large-6 columns">
             <div class="boxed homeTHREE">
-				<h2>3. Marketing</h2>
+				<h2>3. Online Marketing</h2>
 				<h3>Command attention and create genuine leads with the latest promotional techniques </h3>
 
 				<ul>
@@ -104,7 +104,7 @@ Template Name: Homepage
 
 		<div class="small-12 medium-6 large-6 columns">
             <div class="boxed homeFOUR">
-				<h2>3. EVALUATING PROGRESS</h2>
+				<h2>4. Evaluating Progress</h2>
 				<h3>Discover your return on investment with a straightforward reporting</h3>
 
 				<ul>

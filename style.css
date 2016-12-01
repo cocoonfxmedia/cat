@@ -22,7 +22,7 @@ html {
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	font-size: 16px;
-    font-size: 1rem;
+    	font-size: 1rem;
 	overflow-y: scroll;
 	-webkit-text-size-adjust: 100%;
 	-ms-text-size-adjust: 100%;
@@ -69,7 +69,7 @@ p {
 .boxed p {color: #656565;font-family: 'open sans';line-height: 1.5rem;/*    text-transform: uppercase;*/}
 h1 {
   	font-size: 4rem;
-/*  	font-weight: 700;*/
+	font-weight: 600;
   	line-height: 4rem;
   	font-family: 'raleway';
 	margin-bottom: 1rem;
@@ -95,13 +95,9 @@ h2 {
     line-height: 2.175rem;
 }
 .boxed h2 {
-    font-family: 'lato';
-/*    font-weight: 800;*/
-    text-transform: uppercase;
-/*    font-size: 1.2rem;*/
-font-size:2rem;
-font-weight:400;
-
+    	font-family: 'lato';
+	font-weight: 800;
+	font-size: 1.2rem;
 }
 
 h3 {
@@ -134,7 +130,7 @@ h6 {
 
 
 header {
-	min-height: 105px;
+    min-height: 105px;
     width: 100%;
     background-color: #171717;
     position: fixed;
@@ -255,8 +251,21 @@ font-weight:100;
 
 /* = Start of James Playing
 -------------------------------------------------------------- */
-.breadcrumbs {
+
+.published, .modified {
+    font-size: 12px;
+    text-align: left;
+    margin-top: 10px;
+    margin-bottom: 45px;
+    color: #c7d36e;
+    width: 50%;
     float: left;
+}
+.modified {
+	float: right;
+    text-align: right;
+}
+.breadcrumbs {float: left;
     margin-top: 110px;
     list-style: none;
     margin-left: 25px;
@@ -358,7 +367,7 @@ color: white;
 	right: -280px;
 	background:#0097ab;
 	width: 280px;
-	padding: 25px;
+	  padding:125px 25px;
 	-webkit-transition-duration: 0.3s;
 	-moz-transition-duration: 0.3s;
 	-o-transition-duration: 0.3s;
@@ -373,6 +382,19 @@ color: white;
 	padding-top: 0px;border: none;
 
 }
+#slideout_inner input[type="text"],#slideout_inner input[type="email"],#slideout_inner input[type="tel"],#slideout_inner textarea {
+    background-color: #efefef;
+    border-radius: 3px !important;
+    border-style: none none solid;
+    font-size: 14px;
+    line-height: 22px;
+    margin-bottom: 10px !important;
+    margin-top: 5px;
+    margin-left:0px !important;
+    padding: 10px !important;
+    width: 100% !important;
+
+}
 #slideout_inner textarea {
     width: 100%;
     height: 100px;
@@ -382,12 +404,14 @@ color: white;
 #slideout:hover {
 	right: 280px;
 	z-index:99999999;
+
 }
 #slideout:hover #slideout_inner {
 	right: 0;
     top: 0;
     bottom: 0;
 	z-index:99999999;
+         padding:125px 25px;
 		}
 #slideout input[type=submit] {
     font-family: 'raleway', sans-serif;
@@ -396,6 +420,7 @@ color: white;
     font-weight: 600;
     background-color: #1c2a42;
     padding: 13px 40px;
+    box-shadow: 0 -5px 0 0 rgba(0, 0, 0, 0.22) inset;
 }
 #casePop p {
     color: white;
@@ -442,7 +467,7 @@ color: white;
     		padding: 0px;
     		font-family: "Open sans", san-serif;
     		font-size: 14px;
-			font-weight: 200;
+		font-weight: 200;
             width: 80%;
 		}
 
@@ -593,11 +618,10 @@ margin-bottom: 0px;
 
 .callNextPage{width:100%;padding: 15px;height:50px;background-color: #a90920;    display: inline-block;color:#fff;text-align: center;text-decoration: none;}
 
-
 .caseBox {
     min-height: 300px;
     background-color: #fff;
-    padding: 20px;
+    padding: 10px;
     margin-top: -40px;
     margin-bottom: 50px;
     border-top: 5px solid #c7d36e;;
@@ -614,10 +638,21 @@ a.imgCont {
 }
 img.caseImage {
     width: initial;
-    max-width: 60%;
+    max-width: 100%;
+    height:150px;
 	margin: 0 auto;
     display: block;
 }
+a.contactEmail {
+    color: #444;
+    text-decoration: none;
+    font-family: 'raleway', sans-serif;
+}
+
+.mapContainer iframe{
+	pointer-events: none;
+}
+div.wpcf7 img.ajax-loader{height:20px !important;}
 
 /* = End of James Playing
 -------------------------------------------------------------- */
@@ -796,7 +831,8 @@ box-shadow: 3px 3px 5px 0px rgba(74,74,74,1);
 }
 .boxButton button {
     background: #baea41;
-    padding: 1rem 2rem;
+    padding: 0.7rem 2rem 1rem;
+    box-shadow: 0 -5px 0 0 rgba(0, 0, 0, 0.22) inset;
 }
 .relHead, .categories{
     font-size: 1rem;
@@ -991,7 +1027,7 @@ select#cat {
 -------------------------------------------------------------- */
 footer#footer {
     clear: both;
-    height: 200px;
+    height: 250px;
     background-color: lightslategray;
     margin-top: 40px;
 }
@@ -1005,6 +1041,11 @@ footer#footer {
 .footDetails {
   padding-top: 50px;
 }
+.footDetails h3{color:#fff;}
+.footDetails a {
+    color: #fff;
+    text-decoration: none;
+}
 .footDetails h4 {
   float: right;
   font-size: 1rem;
@@ -1015,12 +1056,11 @@ footer#footer {
     font-weight: 300;
     font-size: 0.8rem;
 }
-.footer p span{
-    font-weight: bold;
-}
+
 .footer img {
-    float: right;
+    float: left;
     margin-bottom: 20px;
+    width:130px;
 }
 .footTitle {
     	color: #ffffff;
@@ -1090,9 +1130,9 @@ background-size: 205px 40px;
 
 /* =Colophon
 -------------------------------------------------------------- */
-#colophon {background-color: #293c34;padding: 20px;}
-#colophon p {text-align: center;margin-bottom:0px;}
-#colophon a {color: #000;font-size: 0.8rem;}
+#colophon {    background-color: #171717; padding: 20px; overflow: auto; color: #fff;}
+#colophon p {text-align: center;margin-bottom:0px; color: #fff;font-size: 0.8rem;}
+#colophon a {color: #fff;font-size: 0.8rem;}
 
 /* =Repeatable patterns
 -------------------------------------------------------------- */
@@ -1549,13 +1589,25 @@ img.wp-post-image {
     left: auto; }
 
 @media only screen and (max-width: 40.062em) {
-
+#slideout{display:none;}
 .introWrapper, .designWrapper, .evaluateWrapper, .marketWrapper, .planningWrapper, .casestudyWrapper {
      background-size:cover;}
 
 .logo {
     text-align: center;
+width: 100%;
+margin: 0px auto !important;
+padding: 30px 30px 0px 10px;
 }
+.number{width:100%;padding: 20px;}
+.telephoneQ{font-weight: inherit;}
+.telepnhone a{text-decoration: none;color:#fff;}
+h1.homeHeader{margin-top:180px;font-size:2rem;line-height:2rem;}
+.mainBanner p{font-size:1.2rem;}
+.faceImage{display: none;}
+.introduction{display:none;}
+footer#footer{height:450px;}
+.footDetails{padding-top:10px;}
   .small-push-0 {
     position: relative;
     left: 0%;
