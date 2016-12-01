@@ -25,8 +25,7 @@ Template Name: category
 		<?php endif; ?>
         	<?php if (!cat_is_ancestor_of(32, $cat) && !is_category(32)):  ?>
  			<h1 class="standard h1">
- 			Category: <?php single_cat_title();  ?> category.php
- 			</h1>                                                  
+ 			Category: <?php single_cat_title();  ?></h1>                                                  
 		<?php endif; ?>                         
 </div>
       <div class="small-12 medium-8 large-8 large-pull-2 columns">
